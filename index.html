@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav>
+      <nav>
       <nav id="main-nav" class="topnav">
       <a class="nav-item logo">
         <span class="label"><i class="fas fa-home"></i>Home</span>
       </a>
       <a class="nav-item">
-        <span class="label"><i class="fas favorites"<button>♡</button></i>Favorites</span>
+        <span class="label"><i class="fas favorites" ><button>♡</button></i>Favorites</span>
       </a>
       <a class="nav-item">
         <span class="label"><i class="fas fa-upload"></i>Upload</span>
@@ -26,40 +26,41 @@
       </a>
       <a href="javascript:void(0);" class="nav-item trigram" onclick="navToggle()">&#9776;</a>
     </nav>
+  </nav>
     <section class="slideshow">
       <div class="slideshow-wrapper">
         <div class="slide fade">
           <div class="numberof">1 of 4</div>
-          <img src="https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk"/>
+          <img src="https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk" alt="A picture of a lady on a boat">
           <div class="captiontext">A beautiful view.</div>
         </div><!-- end .slide.fade -->
         <div class="slide fade">
           <div class="numberof">2 of 4</div>
-          <img src="https://i.picsum.photos/id/1041/5184/2916.jpg?hmac=TW_9o6HeD7H7I7NVo-S1Fa1iAvzQ10uvmJqsXvNoi0M"/>
+          <img src="https://i.picsum.photos/id/1041/5184/2916.jpg?hmac=TW_9o6HeD7H7I7NVo-S1Fa1iAvzQ10uvmJqsXvNoi0M" alt="A body of blue water"/>
           <div class="captiontext">The big blue.</div>
         </div><!-- end .slide.fade -->
         <div class="slide fade">
           <div class="numberof">3 of 4</div>
-          <img src="https://i.picsum.photos/id/1050/6000/4000.jpg?hmac=HhCXFcOrIrNguK7GqP6VhICXPa5FmcLZdug505qiEZM"/>
+          <img src="https://i.picsum.photos/id/1050/6000/4000.jpg?hmac=HhCXFcOrIrNguK7GqP6VhICXPa5FmcLZdug505qiEZM" alt="A picture of water and rocks around it"/>
           <div class="captiontext">Travel far and wide.</div>
         </div><!-- end .slide.fade -->
         <div class="slide fade">
           <div class="numberof">4 of 4</div>
-          <img src="https://i.picsum.photos/id/1056/3988/2720.jpg?hmac=qX6hO_75zxeYI7C-1TOspJ0_bRDbYInBwYeoy_z_h08"/>
+          <img src="https://i.picsum.photos/id/1056/3988/2720.jpg?hmac=qX6hO_75zxeYI7C-1TOspJ0_bRDbYInBwYeoy_z_h08" alt="A picture of the blue sky and clouds"/>
           <div class="captiontext">Endless possibilities.</div>
         </div><!-- end .slide.fade -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;<!--unicode for less-than-sign--></a>
       <a class="next" onclick="plusSlides(1)">&#10095;<!--unicode for greater-than-sign--></a>
     </div><!--end slideshow-wrapper-->
-    <br />
-    <div class="text-centers">
-      <span class="indicator" onclick="currentSlide(1)"><img src="https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk"/></span>
-      <span class="indicator" onclick="currentSlide(2)"><img src="https://i.picsum.photos/id/1041/5184/2916.jpg?hmac=TW_9o6HeD7H7I7NVo-S1Fa1iAvzQ10uvmJqsXvNoi0M"/></span>
-      <span class="indicator" onclick="currentSlide(3)"><img src="https://i.picsum.photos/id/1050/6000/4000.jpg?hmac=HhCXFcOrIrNguK7GqP6VhICXPa5FmcLZdug505qiEZM"/></span>
-      <span class="indicator" onclick="currentSlide(4)"><img src="https://i.picsum.photos/id/1056/3988/2720.jpg?hmac=qX6hO_75zxeYI7C-1TOspJ0_bRDbYInBwYeoy_z_h08"/></span>
+    <br/>
+    <div class="text-center">
+      <span class="indicator" onclick="currentSlide(1)"><img src="https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk" alt="A picture of a lady on a boat"/></span>
+      <span class="indicator" onclick="currentSlide(2)"><img src="https://i.picsum.photos/id/1041/5184/2916.jpg?hmac=TW_9o6HeD7H7I7NVo-S1Fa1iAvzQ10uvmJqsXvNoi0M" alt="A body of blue water"/></span>
+      <span class="indicator" onclick="currentSlide(3)"><img src="https://i.picsum.photos/id/1050/6000/4000.jpg?hmac=HhCXFcOrIrNguK7GqP6VhICXPa5FmcLZdug505qiEZM" alt=" picture of water and rocks around it"/></span>
+      <span class="indicator" onclick="currentSlide(4)"><img src="https://i.picsum.photos/id/1056/3988/2720.jpg?hmac=qX6hO_75zxeYI7C-1TOspJ0_bRDbYInBwYeoy_z_h08" alt="A picture of the blue sky and clouds"/></span>
     </div>
     </section>
-    <section class="main-grid">
+    <main class="main-grid">
       <div class="main-grid-item one">
         <div class="thumb"></div><hr>
         <div class="card-content">
@@ -79,6 +80,7 @@
             </div>
           </div>
         </div>
+      </div>
       <div class="main-grid-item two">
         <div class="thumb"></div>
         <div class="card-content">
@@ -127,7 +129,7 @@
             <button data-modal="#1280" class="card-more button">View</button>
           </div>
           </div>
-          <div id="267" class="modal">
+          <div id="1280" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
               <div class="modal-body">
@@ -144,14 +146,14 @@
             <div class="card-content">
               <h3 class="card-title">Camera.</h3>
               <p class="card-text">Capture the moment.</p>
-              <button data-modal="#3264" class="card-more button">View</button>
+              <button data-modal="#435" class="card-more button">View</button>
             </div>
             </div>
-            <div id="267" class="modal">
+            <div id="435" class="modal">
               <div class="modal-content">
                 <span class="close">&times;</span>
                 <div class="modal-body">
-                  <img src="https://i.picsum.photos/id/250/4928/3264.jpg?hmac=4oIwzXlpK4KU3wySTnATICCa4H6xwbSGifrxv7GafWU" alt="A black and white photo of a camera">
+                  <img src="https://i.picsum.photos/id/435/367/267.jpg?hmac=DGMfKQ97KdKvPcIdTNX2ZpkjUmikeljVUYXHZu-t1q8" alt="A black and white photo of a camera">
                   <div class="eg-text">
                     <h3>Camera</h3>
                     <p>Capture the moment</p>
@@ -299,7 +301,7 @@
                                           </div>
                                         </div>
                                       </div>
-    </section>
+    </main>
     <footer>
       <p>&copy;2020 Mariama Jawo</p>
     </footer>
