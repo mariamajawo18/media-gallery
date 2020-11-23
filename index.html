@@ -11,10 +11,20 @@
   </head>
   <body>
     <nav>
-      <a href="#" class="nav-item">One</a>
-      <a href="#" class="nav-item">Two</a>
-      <a href="#" class="nav-item">Three</a>
-      <a href="#" class="nav-item">Four</a>
+      <nav id="main-nav" class="topnav">
+      <a class="nav-item logo">
+        <span class="label"><i class="fas fa-home"></i>Home</span>
+      </a>
+      <a class="nav-item">
+        <span class="label"><i class="fas favorites"<button>♡</button></i>Favorites</span>
+      </a>
+      <a class="nav-item">
+        <span class="label"><i class="fas fa-upload"></i>Upload</span>
+      </a>
+      <a class="nav-item more">
+        <span class="label"><i class="fas fa-ellipsis-h"></i>More</span>
+      </a>
+      <a href="javascript:void(0);" class="nav-item trigram" onclick="navToggle()">&#9776;</a>
     </nav>
     <section class="slideshow">
       <div class="slideshow-wrapper">
@@ -42,86 +52,256 @@
       <a class="next" onclick="plusSlides(1)">&#10095;<!--unicode for greater-than-sign--></a>
     </div><!--end slideshow-wrapper-->
     <br />
+    <div class="text-centers">
+      <span class="indicator" onclick="currentSlide(1)"><img src="https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk"/></span>
+      <span class="indicator" onclick="currentSlide(2)"><img src="https://i.picsum.photos/id/1041/5184/2916.jpg?hmac=TW_9o6HeD7H7I7NVo-S1Fa1iAvzQ10uvmJqsXvNoi0M"/></span>
+      <span class="indicator" onclick="currentSlide(3)"><img src="https://i.picsum.photos/id/1050/6000/4000.jpg?hmac=HhCXFcOrIrNguK7GqP6VhICXPa5FmcLZdug505qiEZM"/></span>
+      <span class="indicator" onclick="currentSlide(4)"><img src="https://i.picsum.photos/id/1056/3988/2720.jpg?hmac=qX6hO_75zxeYI7C-1TOspJ0_bRDbYInBwYeoy_z_h08"/></span>
+    </div>
     </section>
-    <section class="gallery">
-      <div class="card">
-        <div class="one"></div>
-        <img src="https://i.picsum.photos/id/238/2560/1440.jpg?hmac=wKo4dLHwDntZmO_fdtnKtsnmRcPMACca3m5J5vx2AVc" alt="NYC">
-        <h3>New York City</h3>
-        <p>Home sweet home.</p>
-        <a href="#" class="btn">More</a>
+    <section class="main-grid">
+      <div class="main-grid-item one">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+        <h3 class="card-title">New York City</h3>
+        <p class="card-text">Home sweet home.</p>
+        <button data-modal="#1440" class="card-more button">View</button>
+        </div>
       </div>
-      <div class="card">
-        <div class="thumb two"></div>
-        <img src="" alt="">
-        <h3></h3>
-        <p>.</p>
-        <a href="#" class="btn">More</a>
+      <div id="1440" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-body">
+            <img src="https://i.picsum.photos/id/238/2560/1440.jpg?hmac=wKo4dLHwDntZmO_fdtnKtsnmRcPMACca3m5J5vx2AVc" alt="NYC">
+            <div class="eg-text">
+              <h3>New York City</h3>
+              <p> Home sweet home.</p>
+            </div>
+          </div>
+        </div>
+      <div class="main-grid-item two">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <h3 class="cardititle">Dandelion</h3>
+          <p class="card-text"> Wish away.</p>
+          <button data-modal="#1391" class="card-more button">View</button>
+        </div>
       </div>
-      <div class="card">
-        <div class="thumb three"></div>
-        <img src="" alt="">
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
+      <div id="1391" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-body">
+            <img src="https://i.picsum.photos/id/239/1739/1391.jpg?hmac=-Zh20gMdOuV7tHr4wGEUqACAxdvb7gkDlKKS9MIE1TU" alt="Dandelion">
+            <div class="eg-text">
+              <h3>Dandelion</h3>
+              <p> Wish away.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <div class="thumb four"></div>
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
-      </div>
-      <div class="card">
-        <div class="thumb five"></div>
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
-      </div>
-      <div class="card">
-        <div class="thumb six"></div>
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
-      </div>
-      <div class="card">
-        <div class="thumb seven"></div>
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
-      </div>
-      <div class="card">
-        <div class="thumb eight"></div>
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
-      </div>
-      <div class="card">
-        <div class="thumb nine"></div>
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
-      </div>
-      <div class="card">
-        <div class="thumb ten"></div>
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
-      </div>
-      <div class="card">
-        <div class="thumb eleven"></div>
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
-      </div>
-      <div class="card">
-        <div class="thumb twelve"></div>
-        <h3>heading</h3>
-        <p>some text. Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">More</a>
-      </div>
+      <div class="main-grid-item three">
+        <div class="thumb"></div>
+        <div class="card-content">
+          <h3 class="card-title">Dog.</h3>
+          <p class="card-text">A mans bestfriend.</p>
+          <button data-modal="#267" class="card-more button">View</button>
+        </div>
+        </div>
+        <div id="267" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+              <img src="https://i.picsum.photos/id/237/367/267.jpg?hmac=9Xp8JrOngpF2E_G3tRKnJMhZu5AX8FimulIG_sLj1xg" alt="Dog">
+              <div class="eg-text">
+                <h3>Dog</h3>
+                <p>A mans bestfriend</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-grid-item four">
+          <div class="thumb"></div>
+          <div class="card-content">
+            <h3 class="card-title">Flower.</h3>
+            <p class="card-text">I can smell this picture.</p>
+            <button data-modal="#1280" class="card-more button">View</button>
+          </div>
+          </div>
+          <div id="267" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-body">
+                <img src="https://i.picsum.photos/id/360/1925/1280.jpg?hmac=vX9T-qgnqfOUqLnxlsxCZfkKn_wi-9vtPKdbq7H6EgU" alt="Flower">
+                <div class="eg-text">
+                  <h3>Flower</h3>
+                  <p>I can smell this picture</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-grid-item five">
+            <div class="thumb"></div>
+            <div class="card-content">
+              <h3 class="card-title">Camera.</h3>
+              <p class="card-text">Capture the moment.</p>
+              <button data-modal="#3264" class="card-more button">View</button>
+            </div>
+            </div>
+            <div id="267" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                  <img src="https://i.picsum.photos/id/250/4928/3264.jpg?hmac=4oIwzXlpK4KU3wySTnATICCa4H6xwbSGifrxv7GafWU" alt="A black and white photo of a camera">
+                  <div class="eg-text">
+                    <h3>Camera</h3>
+                    <p>Capture the moment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="main-grid-item six">
+              <div class="thumb"></div>
+              <div class="card-content">
+                <h3 class="card-title">New York City.</h3>
+                <p class="card-text">The city that never sleeps.</p>
+                <button data-modal="#2520" class="card-more button">View</button>
+              </div>
+              </div>
+              <div id="2520" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="modal-body">
+                    <img src="https://i.picsum.photos/id/274/3824/2520.jpg?hmac=OOl_w8LX_psogyruUe1z986AuqeS_TY7rLxAFgG4wrc" alt="A black and white photo of a camera">
+                    <div class="eg-text">
+                      <h3>New York City</h3>
+                      <p>The city that never sleeps</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-grid-item seven">
+                  <div class="thumb"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">The Eiffel Tower.</h3>
+                    <p class="card-text">A place for lovers.</p>
+                    <button data-modal="#2448" class="card-more button">View</button>
+                  </div>
+                  </div>
+                  <div id="2448" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="modal-body">
+                        <img src="https://i.picsum.photos/id/318/3264/2448.jpg?hmac=zkYZ29-Ww_A4O_kZ3gjlpFQuEYELWgeM6aI_CMG01BU" alt="A picture of the eiffel tower">
+                        <div class="eg-text">
+                          <h3>The Eiffel Tower</h3>
+                          <p>A place for lovers</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-grid-item eight">
+                      <div class="thumb"></div>
+                      <div class="card-content">
+                        <h3 class="card-title">Vacation.</h3>
+                        <p class="card-text">Summer life for many college students.</p>
+                        <button data-modal="#3840" class="card-more button">View</button>
+                      </div>
+                      </div>
+                      <div id="3840" class="modal">
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <div class="modal-body">
+                            <img src="https://i.picsum.photos/id/390/5760/3840.jpg?hmac=iQnvcvi8NX5BkurqLHAciZ_amDp8IOVXSVbi-27Iaro" alt="People jumping into water while the sun is setting">
+                            <div class="eg-text">
+                              <h3>Vacation</h3>
+                              <p>Summer life for many college students</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="main-grid-item nine">
+                          <div class="thumb"></div>
+                          <div class="card-content">
+                            <h3 class="card-title">Man.</h3>
+                            <p class="card-text">A man and his guitar. True love.</p>
+                            <button data-modal="#1536" class="card-more button">View</button>
+                          </div>
+                          </div>
+                          <div id="1536" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <div class="modal-body">
+                                <img src="https://i.picsum.photos/id/334/2304/1536.jpg?hmac=ihrh84KbSSW-zvp-oRz8FGCVOWvPAD3SZvYPS0v3mv8" alt="A man and his guitar. True love.">
+                                <div class="eg-text">
+                                  <h3>Man</h3>
+                                  <p>A man and his guitar. True love</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="main-grid-item ten">
+                              <div class="thumb"></div>
+                              <div class="card-content">
+                                <h3 class="card-title">Reading.</h3>
+                                <p class="card-text">Summer is the best time to go to the park and read your lattest obsession.</p>
+                                <button data-modal="#3264" class="card-more button">View</button>
+                              </div>
+                              </div>
+                              <div id="3264" class="modal">
+                                <div class="modal-content">
+                                  <span class="close">&times;</span>
+                                  <div class="modal-body">
+                                    <img src="https://i.picsum.photos/id/367/4928/3264.jpg?hmac=H-2OwMlcYm0a--Jd2qaZkXgFZFRxYyGrkrYjupP8Sro" alt="A Kendal in someone's hand while they are reading it.">
+                                    <div class="eg-text">
+                                      <h3>Reading</h3>
+                                      <p>Summer is the best time to go to the park and read your lattest obsession.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="main-grid-item eleven">
+                                  <div class="thumb"></div>
+                                  <div class="card-content">
+                                    <h3 class="card-title">Firecrackers.</h3>
+                                    <p class="card-text">Perfect for a fourth of july summer celebration.</p>
+                                    <button data-modal="#2848" class="card-more button">View</button>
+                                  </div>
+                                  </div>
+                                  <div id="2848" class="modal">
+                                    <div class="modal-content">
+                                      <span class="close">&times;</span>
+                                      <div class="modal-body">
+                                        <img src="https://i.picsum.photos/id/407/4272/2848.jpg?hmac=X9zJsSzzIRQmVA6T4YJvbl6gbQtzZdJU2CLl8F9SE4U" alt="lighting fireworks.">
+                                        <div class="eg-text">
+                                          <h3>Firecrackers</h3>
+                                          <p>Perfect for a fourth of july summer celebration.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="main-grid-item twelve">
+                                      <div class="thumb"></div>
+                                      <div class="card-content">
+                                        <h3 class="card-title">Feet.</h3>
+                                        <p class="card-text">A random picture off feet because why not.</p>
+                                        <button data-modal="#4912" class="card-more button">View</button>
+                                      </div>
+                                      </div>
+                                      <div id="4912" class="modal">
+                                        <div class="modal-content">
+                                          <span class="close">&times;</span>
+                                          <div class="modal-body">
+                                            <img src="https://i.picsum.photos/id/31/3264/4912.jpg?hmac=lfmmWE3h_aXmRwDDZ7pZb6p0Foq6u86k_PpaFMnq0r8" alt="A black and white picture of feet.">
+                                            <div class="eg-text">
+                                              <h3>Feet</h3>
+                                              <p>A random picture off feet because why not.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
     </section>
     <footer>
-      <p>&copy;2020 Mariama</p>
+      <p>&copy;2020 Mariama Jawo</p>
     </footer>
     <script src="page.js"></script>
   </body>
