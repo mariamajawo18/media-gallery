@@ -188,40 +188,88 @@ a.nav-item:hover {
   border-radius: 4px 4px 0 0;
 }
 .one{
-  background-image: url('https://i.picsum.photos/id/400/5184/3456.jpg?hmac=EYjxvwa7KXz8JriEvPZQ85PTcLhdr5sYHyZsanErEbI');
+  background-image: url('https://i.picsum.photos/id/238/2560/1440.jpg?hmac=wKo4dLHwDntZmO_fdtnKtsnmRcPMACca3m5J5vx2AVc');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .two{
   background-image: url('https://i.picsum.photos/id/239/1739/1391.jpg?hmac=-Zh20gMdOuV7tHr4wGEUqACAxdvb7gkDlKKS9MIE1TU');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .three{
   background-image: url('https://i.picsum.photos/id/237/367/267.jpg?hmac=9Xp8JrOngpF2E_G3tRKnJMhZu5AX8FimulIG_sLj1xg');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .four{
   background-image: url('https://i.picsum.photos/id/23/3887/4899.jpg?hmac=2fo1Y0AgEkeL2juaEBqKPbnEKm_5Mp0M2nuaVERE6eE');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .five{
   background-image: url('https://i.picsum.photos/id/435/367/267.jpg?hmac=DGMfKQ97KdKvPcIdTNX2ZpkjUmikeljVUYXHZu-t1q8');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .six{
   background-image: url('https://i.picsum.photos/id/274/3824/2520.jpg?hmac=OOl_w8LX_psogyruUe1z986AuqeS_TY7rLxAFgG4wrc');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .seven{
   background-image: url('https://i.picsum.photos/id/318/3264/2448.jpg?hmac=zkYZ29-Ww_A4O_kZ3gjlpFQuEYELWgeM6aI_CMG01BU');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.thumb.eight{
+.eight{
   background-image: url('https://i.picsum.photos/id/390/5760/3840.jpg?hmac=iQnvcvi8NX5BkurqLHAciZ_amDp8IOVXSVbi-27Iaro');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .nine{
   background-image: url('https://i.picsum.photos/id/334/2304/1536.jpg?hmac=ihrh84KbSSW-zvp-oRz8FGCVOWvPAD3SZvYPS0v3mv8');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .ten{
   background-image: url('https://i.picsum.photos/id/367/4928/3264.jpg?hmac=H-2OwMlcYm0a--Jd2qaZkXgFZFRxYyGrkrYjupP8Sro');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .eleven{
-  background-image:url('images/firecracker.jpg');
+  background-image: url('https://i.picsum.photos/id/407/4272/2848.jpg?hmac=X9zJsSzzIRQmVA6T4YJvbl6gbQtzZdJU2CLl8F9SE4U');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .twelve{
   background-image: url('https://i.picsum.photos/id/31/3264/4912.jpg?hmac=lfmmWE3h_aXmRwDDZ7pZb6p0Foq6u86k_PpaFMnq0r8');
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .card-content {
   padding: 0 .5em .7em .5em;
@@ -233,13 +281,13 @@ a.nav-item:hover {
   margin: 1rem 0 0 0;
   text-transform: uppercase;
   align-self: flex-start;
-  color: var(--text);
+  color: #c0eaed;
 }
 .card-text {
   font-size: .80em;
   line-height: 1.2;
   align-self: flex-start;
-  color: var(--text);
+  color: #c0eaed;
 }
 button.card-more {
   background: transparent;
@@ -251,13 +299,13 @@ button.card-more {
   text-transform: uppercase;
 }
 button.card-more, button.card-more:visited {
-  color: var(--prime);
+  color: #c0eaed;
   border: 1.5px solid var(--prime);
   transition: all 250ms ease-in-out;
 }
 button.card-more:hover, button.card-more:active {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: #c0eaed;
+  border-color: #c0eaed;
 }
 .modal {
    display: none;
